@@ -18,14 +18,7 @@ class CashRegister
 
   def apply_discount
     if discount > 0
-      #new total = original price - discount rate
-      #discount rate
-      #convert the discount rate into percentage
-      # discount rate * 100 / original price
-
-      #new total after discount = original price - (discount rate * 100 / original price)
-      self.total = (total * ((100.0 - discount.to_f)/100)).to_i #tried a lot to solve this w/o this formula. however, you need
-      "After the discount, the total comes to $#{self.total}."
+    "After the discount, the total comes to $#{self.total = (total - total * discount.to_f / 100).to_i}." #tried a lot to solve this w/o this formula. however, you need
     else
       "There is no discount to apply."
     end
